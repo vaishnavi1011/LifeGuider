@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    margin: auto;
+    
+}
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(22, 197, 197);
+}
+.nav-list li a:hover{
+    color: blue;
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 26px 30px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://wallpaper-house.com/data/out/10/wallpaper2you_399418.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 72%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.firsthalf{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.secondhalf {
+    width: 50%;
+    
+}
+
+.secondhalf img{
+    width: 75%;
+    border-style: solid;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 20px;  
+}
+
+.text-small{
+    font-size: 10px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/* .burger1{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line1{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+} */
+
+@media only screen and (max-width: 1350px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 500px;
+        flex-direction: column;
+        transition: all 0.5s ease-out;
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+}
+
+.secright{
+    height: 620px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section1{
+    height: 5200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section2{
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section3{
+    height: 3600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section4{
+    height: 4000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section5{
+    height: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+}
+
+.section6{
+    padding-top: 10px;
+}
+.paras{
+    padding: 35px 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+
+}
+
+.big{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.big1{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 300px;
+
+}
+
+.big2{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+
+.big3{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding-left: 200px;
+}
+
+.small{
+    padding: 0 400px;
+}
+.what{
+    padding: 4px 30px;
+}
+
+.skill{
+    padding: 4px 30px;
+}
+
+.image1{
+    width: 60%;
+}
+
+.image2{
+    width: 130%;
+}
+
+.image3{
+    width: 100%;
+    padding-bottom: 4300px;
+    
+}
+
+.image4{
+   width: 50%;
+   padding-left: 50px;
+}
+
+.image5{
+    width: 50%;
+}
+
+.image6{
+    width: 35%;
+}
+
+.image7{
+    width: 75%;
+}
+
+.image8{
+    width: 50%;
+    padding: 5px 40px;
+}
+
+.image9{
+    width: 75%;
+    padding: 5px 40px;
+}
+
+.img10{
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.image11{
+    width: 70%;
+    padding-left: 50px;
+
+}
+
+.contact{
+    background-color: rgb(229 228 228 / 95%);
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+.form{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.form-input{
+    margin: 15px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.end{
+    background-color: rgb(37, 34, 34);
+}
+
+.text-footer{
+    background-color: rgb(172, 166,166);
+    text-align: center;
+    padding: 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+    </style>
+
+    <title>Life-guider </title>
+
+</head>
+
+<body>
+    <footer id="home"></footer>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-class">
+            <div class="logo"><img src="https://www.linkpicture.com/q/LOGO.jpg" alt="Error">
+            </div>
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#contact"> Contact</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#technical"> Technical</a></li>
+            <li><a href="#competitive"> Competitive</a></li>
+            <li><a href="#academical"> Academical</a></li>
+            <li><a href="#extra"> Extracurricular</a></li>
+        </ul>
+        <!-- <div class="rightnav v-class">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm"> Search </button>
+        </div> -->
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- <div class="burger1">
+            <div class="line1"></div>
+            <div class="line1"></div>
+            <div class="line1"></div>
+        </div> -->
+
+    </nav>
+
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="firsthalf">
+                <p class="text-big">"EDUCATION is the most powerful weapon which you can use to change the world" </p>
+                <p class="text-samll">-Nelson Mandela </p>
+            </div>
+
+            <div class="secondhalf">
+                <img src="https://www.linkpicture.com/q/WhatsApp-Image-2021-04-11-at-04.11.40.jpeg" alt="!">
+            </div>
+        </div>
+        <br>
+        <footer id="about"></footer>
+
+    </section>
+
+    <section class="secright section6">
+        <div class="paras">
+
+            <h1 class="big">About:</h1>
+            <p>Lifeguiders is a website designed to help parents to make them well knowledged with
+                what type of education to provide to their children.
+                Also, helps students to have a clear path about today’s education system and help them to find their
+                passion and makes them clear about what to do next in life.
+            </p>
+            <br>
+            <h1>Introduction:</h1>
+            <p>Many of the students in this generation are in lack of clarity on education regarding
+            <ul class="what">
+                <li>What to do?</li>
+                <li>How to do?</li>
+                <li>When to do?</li>
+                <li>Why to do?</li>
+            </ul>
+            </p>
+            <p>
+                So we here makes their doubts clear and provide them with correct guidance to move them forward in life
+                and make achieve greatest heights in life. <br>
+                We here categorized and briefly discussed about some of topics in education they are-
+            <ul class="what" type="square">
+                <li>Technical Education</li>
+                <li>Competitive Exams</li>
+                <li>Academical Education</li>
+                <li>Extracurricular Activities</li>
+            </ul>
+            </p>
+            <p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://i.pinimg.com/originals/44/9e/31/449e3123369e6078ff80f227d1a527aa.jpg" alt="Error"
+                class="image2">
+        </div>
+    </section>
+    <section class="secright section2">
+        <div class="paras">
+            <h1>Skills and character to be required to achieve greatest heights in life:</h1>
+            <p> We here mention some qualities and characters to be admitted by a student said by many great people in
+                the
+                history.
+            <ul class="skill">
+                <li>Make a dream and focus on dream.</li>
+                <li>Maintain and believe in 3d’s Dedication, Determination and Discipline.</li>
+                <li>Mind management and time management.</li>
+                <li>Don’t be get attached to external happiness in spite try to help others and
+                    lead purpose full life.
+                </li>
+                <li>Don't Give up.</li>
+                <li>Maintain and make good communication with high scholar people and gain knowledge from them.</li>
+                <li>Don’t be afraid of failure “as life itself is said dead when it maintains a constant line on ECG
+                    life
+                    is said to be alive when it maintains up’s and down’s by - RATAN TATA</li>
+                <li>Don’t be afraid of any situation.</li>
+            </ul>
+
+            Finally, by the team lifeguiders we suggest you to
+
+            <h3>“Quit to Quit and Try to Try”</h3>
+            </p>
+
+
+        </div>
+        <div>
+            <img src="https://img.securityinfowatch.com/files/base/cygnus/siw/image/2018/12/SuccessSteps.5c093a205a8f0.png?auto=format&fit=max&w=1200"
+                alt="Error" class="image7">
+        </div>
+
+        
+    </section>
+    
+    
+    <footer id="technical"></footer>
+    <section class="secright section1">
+        <div class="paras">
+            <p class="big">1). Technical Education</p> <br>
+            <h2>INTRODUCTION ABOUT TECHNICAL EDUCATION:</h2>
+            <p> world that we are experiencing today is because of the advancement of science and technology which is a
+                result of technical education.
+                Technical education is quite different from the academical education as academical education only
+                teaches
+                topics for the grading purpose but where as technical education gives you a complete knowledge and
+                support
+                for your future and also make you unique from the crowd.
+                Here we are discussing most important technical skills these days.</p>
+            <br>
+            <h2>CONTENTS:</h2>
+            <h3>1] ROCKET SCIENCE</h3>
+            <br>
+            <h4>INTRODUCTION:</h4>
+            <p>As we all familiar with rockets, as these are used to keep satellites in the orbit around the earth or a
+                planet or a star.
+                Rocket science is one of the most leading topic in the world right now.
+                This study involves and focuses mainly on making satellites and orbiting them in the space around a star
+                or a planet.
+                This plays vital role in developing modern technology as they study the earths atmosphere through
+                satellites, and also these satellites are helpful in many fields like agriculture, natural disaster
+                management, military, communication etc….
+            </p>
+            <br>
+            <h4>STUDYING REFERENCES:</h4>
+            <p>The persons who are interested can pursue degree in aerospace and to specialize in degree in the design
+                and manufacture of the spacecraft. <br>
+                Also, one who are interested in learning this can also learn as a side skill which enhances the skills
+                of a person and helps him to change this society and find his passion. <br>
+                The main aim of the rocket science students is to design spacecraft that works in outer space, and also
+                to building satellites body.
+            </p>
+            <br>
+            <h4>Career:</h4>
+            <p>The rocket scientists are paid with descent highest salary package and also they can enjoy the job as
+                they found the job for what they are passionate for.</p>
+            <br>
+            <h3>Tips and tricks:</h3>
+
+            <p>
+                As “Elon musk” the most famous bilinear the CEO of the SpaceX, Tesla and the boring company once stated
+                in an interview that their children itself are learning from YouTube.
+            </p>
+            <p>-> Explore the websites and browse for the topics </p>
+            <p>-> Learn from online teaching platforms like YouTube, Udemy, Edx etc... </p>
+            <p>-> Collaborate with technicians and learn more facts and stay tuned to latest discoveries and also try to
+                learn from them.
+            </p>
+            <br>
+
+            <h3>2] SPACE EXPLORATION</h3>
+            <br>
+            <h4>INTRODUCTION:</h4>
+            <P>“The life without a space exploration vanishes” said by a great scientist space exploration is studying
+                about the space in different aspects like estimating size of space, life time of stars and planets,
+                evidence for existence of life in other planets and also to find how the life is started.
+                <br>
+                This study involves not only outer space study but also studying about earths atmosphere in deep.
+            </P>
+            <br>
+            <h4>STUDYING REFERENCE:</h4>
+            <P>As a person wants to work as a space scientist, he must study his degree in physics or aerospace. <br>
+                If a person wants to know this as skill or gain knowledge in it there are plenty of theories published
+                in the internet itself, so one can find some resources there and gain knowledge there.
+            </P>
+            <br>
+            <h4>SKILLS REQUIRED:</h4>
+            <P>-->One should be found of science and physics particularly. <br>
+                -->One should be a bibliophile as he must learn more and more books to find the information.
+            </P>
+            <br>
+            <h3>Career:</h3>
+            <p>The space scientists can also earn more money and also they can earn more respect from the society as
+                they are the heroes who are changing the world, and making earth as a better place to live. <br>
+                It was one of the most amazing job in this society.
+            </p>
+            <br>
+
+            <h3>3] PROGRAMMING LANGUAGES</h3>
+            <br>
+            <h3>Introduction:</h3>
+            <P>As everyone are well known with the programming languages the phones, laptops, smart tv’s all are the
+                biproducts of this programming. <br>
+                The programming languages are invented to compute hard problems first then later on they are keep on
+                updating in a level that the life of human being and programming languages are intermixed. <br>
+                There are may programming languages like c, c++, c#, java, JavaScript, sql, html, CSS, ruby, python many
+                more
+            </P>
+            <br>
+            <h3>Applications of programming language:</h3>
+            <p>These programming languages are used in making- <br>
+                -->Operating systems <br>
+                -->Web development <br>
+                -->Applications <br>
+                -->Games <br>
+                And many more applications are there
+            </p>
+            <br>
+            <h3>Studying references:</h3>
+            <p>As now a days craze of programming languages are at peak that we find many of the course readily
+                available on the internet on various platforms. <br>
+                There is no requirement of any degree, anyone can do learn programming languages and build their own
+                projects.
+            </p>
+            <br>
+            <h3>Outcomes of programming languages:</h3>
+            <p>-->Quantum computation (not alone programming language can do it) <br>
+                -->Machine learning <br>
+                -->Artificial intelligence <br>
+                -->Social media <br>
+            </p>
+            <br>
+            <h3>4] MECHATRONICS</h3>
+            <p>
+            <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Mecha_workaround.svg/525px-Mecha_workaround.svg.png"
+                    alt="Error" class="image8">
+            </div>
+            </p>
+            <h3>Introduction:</h3>
+            <br>
+            <p>Mechatronics is the combination of two words mechanics and electronics,
+                Mechatronics is the only branch that almost covered all the aspects of modern technology, it involves
+                robotics, machine designing, electronics, mechanical CAD, programming and almost all the aspects related
+                to latest science and technology. <br>
+                The main use of this branch is to design automobiles, invent different versions of engines and systems
+                involved in vehicles this also has this significance in designing and making aircrafts, ships etc…
+            </p>
+            <br>
+            <h3>Studying references:</h3>
+            <p>As a person who wants to become a automobile engineer or entusiased of designing war crafts or machines
+                and all kinds of hardware appliances can pursue a degree in B.tech in mechatronics and also do masters
+                if he wants they have high probability of selected for a job. <br>
+                Also, who wants to design machines and vehicles can also learn this from the internet and also from many
+                online platforms like YouTube, Udemy, Coursea etc.….
+
+            </p>
+            <br>
+            <h>Career:</h4>
+                <p>The persons who purse this degree can have a good salary package and the number of jobs for them are
+                    increasing day by day so that they can have a bright future.
+                </p>
+                <br>
+                <h4>SKILLS REQUIRED:</h4>
+                <P>-->MATLAB <br>
+                    -->AutoCAD <br>
+                    -->SolidWorks <br>
+                    -->Well knowledge in physics and mechanics. <br>
+                </P>
+                <br>
+                <h3>Tips and tricks:</h3>
+                <p>-->One should always stay connected to modern technology and inventions as there is always a new
+                    invention in this field.
+                    -->Collaborate with teachers and other high professionals.
+                    -->Keep on practicing some kinds of projects in AutoCAD, Solid works, MATLAB etc…….
+                </p>
+                <br>
+                <h3>5] ROBITICS</h3>
+                <p>
+                <div>
+                    <img src="https://images.idgesg.net/images/article/2018/10/ai_robotics_analytics_data-scientist_mathematics_equation-100777424-large.jpg"
+                        alt="Error" class="image9">
+                </div>
+                </p>
+                <h3>Introduction:</h3>
+                <p>Robotics is the most advancing and fast-growing field in this modern era the applications of robotics
+                    is vast and unnumerable. <br>
+                    The latest application of robotics is mars rover a robot released by NASA on to the mars for mars
+                    exploration so we can understand that the significance of robotics in this modern era.
+                </p>
+                <br>
+                <h3>Studying reference:</h3>
+                <p>The person who want to become an robotics engineer can pursue degree in b.tech in robotics and also
+                    b.tech in mechanical engineering and can do masters if they wanted. <br>
+                    Also, people who want to learn this due to interest and passion they have on it can also learn it
+                    from the internet on many online platforms.
+                </p>
+                <br>
+                <h4>SKILLS REQUIRED:</h4>
+                <P>-->Knowledge in physics and mathematics <br>
+                    -->Programming knowledge <br>
+                    -->Mechanics and kinematics.
+                    <br>
+                </P>
+                <br>
+                <h3>Applications of robotics:</h3>
+                <p>-->Replacing human beings with robots in harmful working conditions <br>
+                    -->Making products more accurate and affective <br>
+                    -->Military purpose <br>
+                    -->Industrial purpose <br>
+                    -->Involves in complex computations <br>
+                    -->Studying many theories which are not able to understand by human brain like blackholes, quantum
+                    physics etc…… <br>
+                    And in many more fields.
+                </p>
+                <br>
+                <h2>Importance of technical education:</h2>
+
+                <p>-->This education helps in advancements of science and technology <br>
+                    -->This makes humans life more easy <br>
+                    -->This makes future more brighter and better than past <br>
+                </p>
+                <br>
+                <h2>Skills required for learning technical education:
+                </h2>
+                <p>-->Time management <br>
+                    -->Good communication skills <br>
+                    -->Awareness on latest science and technology <br>
+                    -->Focus <br>
+                    -->Knowledge on science and mathematics <br>
+                    -->Well knowledged in theories of science <br>
+                    -->Basic idea on programming <br>
+                </p>
+                <br>
+                <h2>Benefits of technical education:</h2>
+
+                <p>-->Helps to change the society <br>
+                    -->We can make and improve science and technology <br>
+                    -->Helping future generations <br>
+                    -->Detecting natural calamities <br>
+                    -->Space exploration <br>
+                    Many more uses are there <br>
+                </p>
+                <br>
+                <br>
+                <h1>“The education we gain, which does not helps to change the world is not an education”</h1>
+        </div>
+        <div>
+            <img src="https://www.linkpicture.com/q/456.jpg" alt="Error" class="image3">
+        </div>
+
+    </section>
+    
+    
+    
+    
+    
+    <footer id="competitive"></footer>
+    <section class="secright section3">
+        <div class="paras">
+            <p class="big">2). Competitive Exams</p> <br>
+
+            <h2>Introduction:</h2>
+            <p class="smaall">Competitive exams are the exams which are held on different modes on different aspects.
+                <br>
+                The judging criteria of these exams are based on the marks you score or based on the comparison of your
+                marks with toppers marks and declaring percentage criteria. <br>
+                Here we are going to discuss some of exams to make you familiar and well knowledged about different
+                exams <br>
+                Before moving ahead how much brilliant you are but this society doesn’t care about your intelligence if
+                you fail to succeed in exams so here we are sharing details of some exams and tips and tricks and
+                strategy to be followed to succeed.
+                <br>
+            </p>
+            <br>
+            <h3>
+                1] JEE MAIN
+
+            </h3>
+            <p>
+                About:- This is online mode examination which held every year to admit students to NIT’s and IIIT’s
+                across the India for pursuing engineering. Conducted by NTA under MHRD. <br>
+                Frequency:- 4 times a year (as per new rules) in February, March, April, May
+                Eligibility: students who pursued intermediate or equal certificate before 2 years to students who are
+                pursuing this year, no age limit. <br>
+                Application:- Application to be done on online mode. <br>
+                Subjects:- 5 subjects with 3 compulsory and 2 elective/optional <br>
+                For B.tech : <br>
+                Mathematics, Physics and one of (Chemistry/biotechnology/biology/technical vocational subjects) with 2
+                other electives. <br>
+                For B.arch: <br>
+                Mathematics with either of two subjects from (Chemistry/biotechnology/biology/technical vocational
+                subjects) with 2 other electives. <br>
+
+            </p>
+            <br>
+            <h3>
+                2] JEE ADVANCED
+
+            </h3>
+            <p>
+                About: This exam is set by IIT’s and IISC to give admission to students who are eligible in one of
+                various engineering branches and also for B.Arch. and B. Planning. Every year one of the IIT take lead
+                and conducts examination. <br>
+                Frequency: Once a year. <br>
+                Eligibility: One who qualified JEE mains and has a minimum of 75% score in board exam for general
+                candidates and 65% for SC/ST and PWD <br>
+                Application: Application can be done online guidelines are shared by NTA in score card of JEE main. <br>
+                Subjects: Mathematics, Physics, chemistry. <br>
+            </p>
+            <br>
+            <h3>
+                3] GATE
+
+            </h3>
+            <p>
+                About: GRADUATE APTITUDE TEST IN ENGINEERING is known as GATE is conducted by 7 IIT’s and IISC under
+                MHRD to provide masters for the candidates who are eligible and the GATE score is considered by some of
+                PSUs to offer jobs to candidates. It is a three hours exam. <br>
+                Frequency: Once a year <br>
+                Eligibility: Bachelor's degree holders in Engineering / Technology / Architecture (3 years after 10+2/
+                10+2+3(ongoing)/ 10+2+4(ongoing)/ Post-B.Sc./ Post-Diploma) and those who are in the final year of such
+                programs (Also prefinal year of B. tech). <br>
+                • Master's degree holders in any branch of Science/Mathematics/Statistics/Computer Applications or
+                equivalent and those who are in the final year of such programs. <br>
+                • Candidates in the second or higher year of Four-year integrated master's degree programs (Post-B.Sc.)
+                in Engineering / Technology. <br>
+                • Candidates in the fourth or higher year of Five-year integrated master's degree programs or Dual
+                Degree programs in Engineering / Technology. <br>
+                • Candidates with qualifications obtained through examinations conducted by professional societies
+                recognized by UGC/AICTE (e.g., AMIE by IE(India), AMICE by the Institute of Civil Engineers
+                (India)-ICE(I), AMIETE by IETE(India)) as equivalent to B.E./B.Tech. <br>
+                Those who have completed section A or equivalent of such professional courses are also eligible.
+                There is no age limit criterion defined by the exam conducting authority to appear in GATE. <br>
+
+                Application: The application is to be done on online mode. Guidelines are provided by GATE board. <br>
+                Subjects: Verbal ability, Numerical ability, Engineering mathematics, Technical ability. <br>
+
+
+            </p>
+            <br>
+            <h3>
+                4] SBI PO
+
+            </h3>
+
+            <p>
+                ABOUT:- This exam is conducted by State Bank of India. It is conducted to select candidates for the
+                post of Probationary Officers (PO). <br>
+                Application Mode: - Online <br>
+                Frequency: - Once a year (Annually) <br>
+                Exam Mode: - Online <br>
+                Exam Rounds: - 3(Prelims + Mains + Interview) <br>
+                Eligibility: - Age between 21-30 years <br>
+                Graduate / In final year of graduation <br>
+                Subjects: - Reasoning & Computer Aptitude, Data analysis, general awareness,
+                English, marketing Scheme <br>
+                Marking Scheme: - maximum marks200 (0.25 negative marking) <br>
+
+            </p>
+            <br>
+            <h3>
+                5] SBI CLERK
+
+            </h3>
+
+            <p>
+                About:- Exam is also conducted by State Bank of India for the post of Junior Associates. <br>
+                Frequency: - annually <br>
+                Eligibility: - Graduate from a recognized University <br>
+                Application mode: -online <br>
+                Subject: - general English, reasoning, quantitative aptitude <br>
+                Marking scheme: - hundred / per question one mark <br>
+
+
+            </p>
+            <br>
+            <h3>
+                6] IBPS PO
+
+            </h3>
+
+            <p>
+                About:- this exam is conducted by Institute of Banking personnel selection (IBPS) to select individuals
+                for post of probationary officers in Bank of India <br>
+                Frequency: - Annually <br>
+                Eligibility: - graduation in any discipline <br>
+                age limit 20 to 30 years <br>
+                Application mode: - online <br>
+                Subjects: - reasoning, computer aptitude, English language. <br>
+                Marking scheme: - total marks 200 (0.25 negative) <br>
+
+
+            </p>
+            <br>
+
+            <h3>
+                7] IBPS CLERK
+
+            </h3>
+            <p>
+                About:- exam is conducted by Institute of Banking personnel selection (IBPS) to recruit clerical cadre
+                numerous banks of the country <br>
+                Frequency: - annually <br>
+                Eligibility: - age between 20 to 28 year <br>
+                graduate from any discipline <br>
+                Application mode: - online <br>
+                Subjects: - general English, reasoning ability, computer aptitude, quantitative
+                aptitude <br>
+                Marking scheme: - 190 questions off maximum marks 200
+                0.25 negative marking <br>
+
+
+
+            </p>
+            <br>
+            <h3>
+                8] IBPS RRB
+
+            </h3>
+            <p>
+                About:- This exam is conducted by Institute of Banking personnel selection (IBPS)
+                to recruit candidates for the post of officer scale I, II, III and office assistant. <br>
+                Frequency: - annually <br>
+                Eligibility: - for officer scale II {2-year experience in relevant field} <br>
+                for officer scale III {minimum 5-year experience as officer} <br>
+                age limit 18 to 30 year <br>
+                Application mode: - online <br>
+                Subjects: - reasoning, qualitative aptitude, English language, Hindi language,
+                Computer, knowledge, general and financial awareness <br>
+                Marking scheme: - 200 maximum marks with 0.25 negative marking <br>
+
+            </p>
+            <br>
+            <h3>
+                9] RBI Assistant
+
+            </h3>
+            <p>
+                About:- this exam is conducted by Reserve Bank of India to select the deserving candidates for the post
+                of Assistant in RBI <br>
+                Frequency: - annually <br>
+                Application mode: - online <br>
+                Subject: - English reasoning, computer knowledge, general awareness, quantitative aptitude <br>
+                Eligibility: - age between 20 to 28 years <br>
+                graduate with more than 50% in graduation <br>
+                Marking scheme: - 200 marks with 0.25 negative marking <br>
+
+            </p>
+            <br>
+            <h3>
+                10]DRDO
+
+            </h3>
+            <p>
+                About:- this exam is conducted by Defence research and development organisation of ministry of defence
+                to recruit candidates for the post of junior research fellows <br>
+                Frequency: - annually <br>
+                Eligibility: - candidate must have a bachelor degree in Science <br>
+                3-year diploma in Engineering / Technology / computer science
+                Final year student can also apply <br>
+                Application mode: - online <br>
+                Subject: - reasoning, general awareness, quantitative and numerical ability,
+                general science, general match, general English <br>
+                Marking scheme: - 200 marks <br>
+
+            </p>
+            <br>
+            <br>
+
+
+
+
+            <h2>CIVIL SERVICE MAJOR EXAMINATION</h2>
+            <p>
+                1. Indian Administrative service <br>
+                2. Indian Foreign service <br>
+                3. Indian police service <br>
+                4. Indian P and T accounts and finance <br>
+                5. Indian Audit and accounts service <br>
+                6. Indian customs and central excise service <br>
+                7. Indian Defense accounts service <br>
+                8. Indian Revenue service <br>
+                9. Indian ordnance factories services <br>
+                10. Indian postal service <br>
+                11. Indian civil accounts service <br>
+                12. Indian Railway traffic service <br>
+                13. Indian railway accounts service <br>
+                14. Indian railway personal services <br>
+                15. Posts of assistant security commissions in railway protection <br>
+                16. Indian defense estate services <br>
+                17. Indian information services <br>
+                18. Indian trade services <br>
+                19. Indian corporate law service <br>
+                20. Armed force headquarters civil services <br>
+                21. Delhi, Andaman and nicobar islands, Lakshadweep, daman and diu , Dadar and nagar haweli civil
+                services <br>
+                22. Ponducherry civil services <br>
+                23. Ponduchery police services <br>
+
+            </p>
+
+
+
+        </div>
+
+        
+    </section>
+    
+    
+    
+    
+    <footer id="academical"></footer>
+    <section class="secright section4">
+        <div class="paras">
+            <p class="big">3). ACADEMICAL EDUCATION</p>
+            <p class="img10">
+                <img src="http://mcg-qna.s3.amazonaws.com/7942aa10427473c58388454fe4a496270c2536f44429.png" alt="Error">
+            </p>
+            <h2>Introduction:</h2>
+            <p>Many of the parents have a doubt that on what stream their children should be educated, so in this
+                section we discussed briefly about academic education and by that we hope one can get a clarity to where
+                and on what platform to make their children study.
+                Academic education is the prime thing for the better and smooth foundation of life. It tells the whole
+                personality of a person on a boarder scale. From centuries, the main focus of humans is to gather better
+                and quality academic education. Academic education provides a certification for being literate from
+                social class. In most cases, people who are better in academics in academic, come up with flying colors
+                in their personal and professional life.
+                Education system in India is upgrading day by day, to meet the needs of present. With increased number
+                of boards and institutes, it become difficult to chose the better one to help you with this, we have
+                collected information on various boards that are trending in this decade. From this you will get a clear
+                picture on all the major boards in India.
+            </p>
+            <br>
+            <h2>1] CBSE (Central Board of Secondary Education):</h2>
+            <p>This is the most popular board in India which is under the control of central government of India. It’s
+                all methodologies and contents are approved by central government. <br>
+                The content of this board primarily focuses on covering the syllabus of prestigious exams like JEE and
+                NEET. Mostly the content of these exams revolves around the books provided by this board. <br>
+                The two major exams under this board happens in class10 (Highschool) and class12 (Intermediate).
+            </p>
+            <br>
+            <h2>2] ICSE/ISC (INDIAN CERTIFICATE OF SECONDARY EDUCATION)</h2>
+            <p>ICSE has also expanded its wings all over the nation. It is a national board but is held privately. This
+                board aims to provide high quality education to its students. Its syllabus is different in many aspects
+                in comparison to CBSE one. <br>
+
+                This board focuses on overall development of student by emphasizing on all areas and subjects with equal
+                and utmost importance. Also this board focuses more on English language understanding and speaking. This
+                board conducts three examinations namely:- <br>
+                -->ICSE – CLASS X <br>
+                -->ISC – CLASS XII <br>
+                -->CVE – Year 12 <br>
+            </p>
+            <h2>3] State boards</h2>
+            <p>Every state in India has its specific state board to encourage the local language and principles among
+                their tiny toddlers. There are more than 30 state boards in India which are successfully providing
+                education to their citizens. <br>
+                State board focus on all the levels of society, specially the one’s who don’t have enough resources for
+                quality education. State board provide various incentives from time to time to the weaker and needy
+                section of society. <br>
+                All the rules and regulations in state board run schools are advised from state board only.
+            </p>
+            <br>
+            <div>
+                <img src="https://www.linkpicture.com/q/2_175.png" alt="Error" class="image4">
+            </div>
+            <br>
+            <br>
+            <br>
+            <p class="big1">LIFE AFTER 10TH</p>
+            <p>Once you step out of class 10 you have to be serious and answerable to your interests and the path you
+                want to take for building your career. This is the most important part and decision of our life which
+                has to be done with full caution and information. <br> To avoid any emerging confusion regarding career
+                decision we are discussing the major options available here: -</p>
+            <br>
+            <h2>For science students:</h2>
+            <br>
+            <h3>1] MPC</h3>
+
+            <p>Here the subjects are mathematics, physics and chemistry. This group of subjects primarily focuses on
+                engineering and technical courses. This stream can be chosen by students who are interested in
+                technology and are enthusiast to advance the solution to tough problems</p>
+            <br>
+            <h3>2] BiPC</h3>
+
+            <p>This group is mainly designed for medical students, composed of subject’s biology, physics and chemistry.
+                This stream will give access to medical colleges, also if you are interested in research works on life
+                and living bodies and all this field suits you.</p>
+            <br>
+            <h3>3]MBiPC</h3>
+            <p>This can be said to be emerged from adding the subjects of MPC and BiPC. Here in general cases, students
+                find it hard to focus on mathematics and biology both because these two are entirely different areas. If
+                you are interested in maths and biology one can select this stream and it allows to go further in
+                medical as well as engineering.</p>
+            <br>
+
+            <h2>FOR ARTS STUDENTS:</h2>
+            <br>
+            <p>This stream includes subjects like sociology, history, economics, English, political science and
+                psychology career opportunities in this stream is endless. This stream is diverse and just demands your
+                love and interest for subjects you chosen. From this stream you can end up in getting to government jobs
+                in various departments easily.</p>
+            <br>
+            <h2>FOR COMMERECE STUDENTS</h2>
+            <br>
+            <p>This stream includes subjects like accounting, business studies, Economics, Mathematics. As the name
+                suggests thus stream revolves around economical aspects, market, business world etc.
+                This stream provides a wide range of opportunities to its students. Students can go for economist,
+                financial advisors, Charted accountant, Banking etc. by studying from this stream easily.
+            </p>
+            <br>
+            <br>
+            <br>
+            <p class="big1">LIFE AFTER 12TH {INTERMEDIATE}</p>
+            <p>When class 12 ends with protective and safer environment of school and makes the students ready to step
+                in their college life. But choosing the course after 12 is a tedious task as it is directly linked to
+                our professional life. Here a student steps into a completely different world, a next level competition,
+                a feel of semi-professional world. This is the point of life where students get truth behind the most
+                common quote of Indian elder’s “Study hard till 10th, then life is set, and then study till 12, then
+                your life is set”. Here the real struggle and exploring ourselves occurs. <br>
+                The carrier opportunities that can be chosen after completing 12 mainly depends on the stream chosen. A
+                brief idea on carrier graduation opportunities or different stream is provided here: -
+            </p>
+            <br>
+            <h2>For BiPC students</h2>
+            <h3>1] MBBS (Bachelor of medical and bachelor of surgery)</h3>
+            <p>It 5 and half year long course intended to become a certified doctor in India. It consists of 1 year
+                compulsory internship under experienced doctor. The most compulsory internship under experienced doctor.
+                The most common competitive exam to get into this is NEET </p>
+            <br>
+            <h3>2] BDS (Bachelor of dental surgery)</h3>
+            <p>This is a 5-year long course consisting of compulsory 1 year internship. This aim for dental doctor in
+                India and has vast scope in governmental and private sector.</p>
+            <br>
+            <h3>3] BSC (Bachelor of science)</h3>
+            <p>This can be done from choosing subject from a variety of options like. Botany, Biochemistry, ecology,
+                environmental science, molecular biology, physics, zoology. <br>
+                This course has a duration of three-years, different colleges have their own way of conducting their own
+                entrance examination for this course, they are eligible for doing jobs in not only their course related
+                but also in teaching, banking etc.….
+            </p>
+            <br>
+            <h2>FOR MPC STUDENTS:</h2> <br>
+            <h3>1] ENGINEERING (B. tech/BE):</h3>
+
+            <p>India is very popular in terms of its vast number of engineers and engineering institutes. This is the
+                most famous course done by MPC students in India. The most prestigious exam in India is JEE mains and
+                advanced on basis of the ranks they obtained in this exam they are allotted seats in various prestigious
+                colleges in India like NIT’s, IIT’s, IIIT’s and GFTI’s in various branches of engineering.</p>
+            <br>
+            <h3>2]BCA (Bachelor of computer applications)</h3>
+            <p>With the advancements in latest technology computers gained most importance and this course became
+                equivalent to b. tech in computer science. The duration of course is three years. They can even pursue a
+                further degree that is MCA or they can get job in IT company on basis of this.</p>
+            <br>
+            <h2>FOR COMMERCE STUDENTS</h2>
+            <br>
+            <h3>1] B. COM (Bachelor in commerce)</h3>
+            <p>This course for commerce stream students has a duration of 3 years. This course paves the path for making
+                career opportunity in field of banking, accountancy, economist etc.…. This course suits best for
+                students who want to pursue carrier in financial or business-related fields.</p>
+            <br>
+            <h3>2] CA (Charted Accountancy)</h3>
+
+            <p>The CA’s are estimated to be the most successful financials of a country. Entrance exams are conducted to
+                admit students for CA study.
+                This course has a duration of 5 years approximately, This course doesn’t have any age limit to stop you
+                but only and the barrier you have to cross is the exam ICAI.
+            </p>
+            <br>
+            <h2>FOR ART’S/HUMANITIES STUDENTS</h2>
+            <br>
+            <h3>1] BA-LLB (Bachelor of arts and bachelor of law)</h3>
+            <p>This is a graduation course for law interested aspirants. This course has a duration of 5 years. This
+                course can be understood as sum of arts and law. Admission under this course is done through CLAT
+                examination.</p>
+            <br>
+            <h3>2] BFA (Bachelor of Fine Arts)</h3>
+            <p>This course is dedicated to student’s enthusiast about arts, drawing, and creativity. This course has a
+                duration of 4 years only. This course suits to the people who have great creativity in their hands and
+                blood by birth.</p>
+            <h2 class="big2">“LIFE IS FULL OF CHOICES!
+                IT’S YOUR LIFE!
+                CHOOSE WISELY!...” <br>
+                -by team lifeguiders.
+            </h2>
+
+
+
+
+
+        </div>
+
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    <footer id="extra"></footer>
+    
+    <section class="secright section5">
+        <div class="paras">
+            <p class="big3">4). EXTRACURRICULAR ACTIVITIES</p>
+            <p class="img12">
+                <img src="https://www.crosbyscholarsiredell.org/wp-content/uploads/sites/4/2020/06/extracurricular-activities.png"
+                    alt="error">
+            </p>
+            <h2>Introduction:</h2>
+            <p>Education cannot alone make a person sharper, many of the parents think that these are extremely waste of
+                time for children but the fact is these are not waste of time they are most useful to enhance one’s
+                skills in all fronts. <br>
+                Extracurricular activities involve-
+            </p>
+            <ol class="what" type="1">
+                <li>Indoor games</li>
+                <li>Outdoor games</li>
+                <li>Singing</li>
+                <li>Arts </li>
+
+            </ol> <br>
+            <p>Many more… <br>
+                These include general hobbies like music, dance, drawing, painting, crafting etc.….
+            </p>
+            <br>
+            <br><br>    
+            <h2>USES OF EXTRACURRICULAR ACTIVITIES:</h2>
+            <ul class="what">
+                <li>Extracurricular activities involve creative thinking which makes children more creative and make
+                    them think out of the box</li>
+                    <li>They boost up confidence and increases hope on life</li>
+                    <li>Sports makes children to be more focused on work</li>
+                    <li>These activities set children to manage time for all activities which results in building time
+                        management</li>
+                        <li>Increases sportiness in children and make them to stay strong even in situation of failure</li>
+                        <li>They always refresh them mentally and physically</li>
+                        <li>It increases critical thinking ability in children</li>
+                        <li>In some times some sports also teach how to behave like where to be silent and where to be violent
+                        </li>
+                    </ul>
+                    <br>
+                    <br>
+                    <p>EDUCATION WITH EXTRACURRICULAR ACTIVITIES HAVE MANY USES AND MAKES CHILDREN STRONGER AND SHARPER IN ALL
+                        SITUATIONS. <br> <br>
+                        SO EXTRACURRICULAR ACTIVITIES HAVE THE SAME IMPORTANCE AS EDUCATION.
+                    </p>
+                    <br><br>
+                    
+                    <div class="thumbnail">
+                        <img src="https://www.linkpicture.com/q/789.jpg" alt="Error" class="image11">
+                    </div>
+                    
+                </div>
+
+    </section>
+
+
+    <footer id="contact"></footer>
+    <section class="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your Name">
+            <input class="form-input" type="text" name="phone" id="phone"
+                placeholder="Enter your Phone no.(WhatsApp no.)">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your Email Id">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate Your Concern"></textarea>
+            <button class="btn btn-dark">SUBMIT</button>
+        </div>
+    </section>
+    
+    <section class="end">
+        <br>
+        <br>
+     
+    </section>
+
+    <footer>
+        <p class="text-footer">This website is maintained and designed by Sandeep kumar along with team members VIVEK,
+            Yashwant and Vaishnavi Tripathi.</p>
+        <h3 class="text-footer">Copyright &copy; 2021- www.lifeguider.com-All rights reserved</h3>
+    </footer>
+
+    <script>burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        rightnav = document.querySelector('.rightnav')
+        navList = document.querySelector('.nav-list')
+
+
+        burger.addEventListener('click', () => {
+            rightnav.classList.toggle('v-class');
+            navList.classList.toggle('v-class');
+            navbar.classList.toggle('h-nav');
+
+
+        })</script>
+</body>
+
+</html>
